@@ -73,7 +73,7 @@
 </layers>
 <library>
 <packages>
-<package name="GY-89">
+<package name="GY-89_HOLE">
 <wire x1="20" y1="-1" x2="20" y2="16.3" width="0.127" layer="21"/>
 <wire x1="20" y1="16.3" x2="-1.5" y2="16.3" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="16.3" x2="-1.5" y2="-1" width="0.127" layer="21"/>
@@ -88,6 +88,42 @@
 <pad name="VIN" x="0" y="0" drill="1" rot="R90"/>
 <text x="16.51" y="13.97" size="1.27" layer="25" align="center">GY-89</text>
 <hole x="1" y="13.8" drill="3"/>
+</package>
+<package name="GY-89_PAD">
+<wire x1="20" y1="-1" x2="20" y2="16.3" width="0.127" layer="21"/>
+<wire x1="20" y1="16.3" x2="-1.5" y2="16.3" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="16.3" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="20" y2="-1" width="0.127" layer="21"/>
+<pad name="CS2" x="17.78" y="0" drill="1" rot="R90"/>
+<pad name="CS1" x="15.24" y="0" drill="1" rot="R90"/>
+<pad name="SDO/SAO" x="12.7" y="0" drill="1" rot="R90"/>
+<pad name="SDA" x="10.16" y="0" drill="1" rot="R90"/>
+<pad name="SCL" x="7.62" y="0" drill="1" rot="R90"/>
+<pad name="GND" x="5.08" y="0" drill="1" rot="R90"/>
+<pad name="3V3" x="2.54" y="0" drill="1" rot="R90"/>
+<pad name="VIN" x="0" y="0" drill="1" rot="R90"/>
+<text x="16.51" y="13.97" size="1.27" layer="25" align="center">GY-89</text>
+<polygon width="0.127" layer="17">
+<vertex x="1.009" y="15.2766" curve="-90"/>
+<vertex x="2.509" y="13.7766" curve="-90"/>
+<vertex x="1.009" y="12.2766" curve="-90"/>
+<vertex x="-0.491" y="13.7766" curve="-90"/>
+</polygon>
+</package>
+<package name="GY-89_FLOATING">
+<wire x1="20" y1="-1" x2="20" y2="16.3" width="0.127" layer="21"/>
+<wire x1="20" y1="16.3" x2="-1.5" y2="16.3" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="16.3" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="20" y2="-1" width="0.127" layer="21"/>
+<pad name="CS2" x="17.78" y="0" drill="1" rot="R90"/>
+<pad name="CS1" x="15.24" y="0" drill="1" rot="R90"/>
+<pad name="SDO/SAO" x="12.7" y="0" drill="1" rot="R90"/>
+<pad name="SDA" x="10.16" y="0" drill="1" rot="R90"/>
+<pad name="SCL" x="7.62" y="0" drill="1" rot="R90"/>
+<pad name="GND" x="5.08" y="0" drill="1" rot="R90"/>
+<pad name="3V3" x="2.54" y="0" drill="1" rot="R90"/>
+<pad name="VIN" x="0" y="0" drill="1" rot="R90"/>
+<text x="16.51" y="13.97" size="1.27" layer="25" align="center">GY-89</text>
 </package>
 </packages>
 <symbols>
@@ -113,7 +149,7 @@
 <gate name="G$1" symbol="GY-89" x="22.86" y="12.7"/>
 </gates>
 <devices>
-<device name="" package="GY-89">
+<device name="" package="GY-89_HOLE">
 <connects>
 <connect gate="G$1" pin="3V3" pad="3V3"/>
 <connect gate="G$1" pin="CS1" pad="CS1"/>
